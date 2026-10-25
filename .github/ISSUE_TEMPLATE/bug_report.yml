@@ -1,0 +1,34 @@
+name: Bug report
+description: Tell us what happened and how to reproduce it.
+title: '[Bug] '
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Melody Sketch version
+      placeholder: Browser 0.4 or native version
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System and host
+      description: OS, browser or DAW version, and audio device if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the root, notes, meter, swing and speed if they matter.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Reports are public. Do not include private projects, credentials or personal data.
